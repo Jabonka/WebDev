@@ -7,8 +7,18 @@
     --group-color:rgba(255, 255, 255, 0.1);
     --shade-color:rgba(0, 0, 0, 0.1);
     --bacground2-color:rgba(255, 255, 255, 0.15);
-
-
+}
+.head{
+    font-weight: 400;
+    font-size: 2.3rem;
+    line-height: 130%;
+}
+header{
+    background-color: var(--group-color);
+}
+.b4{
+    background-color: var(--group-color);
+    border: none;
 }
 body{
     background-color: var(--background-color);
@@ -20,7 +30,6 @@ h2{
     font-weight:700;
     font-size:4.5rem;
     line-height: 89%;
-    text-align: center;
 }
 p.cookie{
     font-weight: 500;
@@ -78,6 +87,7 @@ li.otzv{
     font-size: 1.4;
     line-height: 129%;
     color: var(--second-color);
+    text-align: center;
 }
 h3.forms{
     color:var(--first-color);
@@ -116,6 +126,11 @@ button.b1{
     line-height: 47%;
     border: none;
 }
+button.b3{
+    color: var(--second-color);
+    background-color: var(--background-color);
+    border: none;
+}
 .art{
     text-align: center;
     background-color: var(--group-color);
@@ -148,9 +163,6 @@ button.b2{
     width: 31.7rem;
 }
 form{
-    text-align: center;
-}
-.s1{
     text-align: center;
 }
 footer{
