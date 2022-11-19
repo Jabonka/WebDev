@@ -6,6 +6,7 @@
     --second-color:#FFFFFF;
     --group-color:rgba(255, 255, 255, 0.1);
     --shade-color:rgba(0, 0, 0, 0.1);
+    --bacground2-color:rgba(255, 255, 255, 0.15);
 
 
 }
@@ -19,6 +20,7 @@ h2{
     font-weight:700;
     font-size:4.5rem;
     line-height: 89%;
+    text-align: center;
 }
 p.cookie{
     font-weight: 500;
@@ -26,9 +28,6 @@ p.cookie{
     line-height: 140%;
     vertical-align: top;
     text-align: left;
-}
-h3.hw{
-    font-size: 0;
 }
 h3{
     font-weight:500;
@@ -59,6 +58,14 @@ p.three{
     font-size:1.8rem;
     line-height: 111%;
     color: var(--second-color);
+    text-align: left;
+}
+p.three2{
+    font-weight:200;
+    font-size:1.8rem;
+    line-height: 111%;
+    color: var(--second-color);
+    text-align: right;
 }
 p.exp{
     font-weight: 400;
@@ -66,7 +73,7 @@ p.exp{
     line-height: 100%;
     color: var(--second-color);
 }
-p.otzv{
+li.otzv{
     font-weight: 200;
     font-size: 1.4;
     line-height: 129%;
@@ -79,13 +86,17 @@ h3.forms{
 li.listexp{
     text-align: center;
     background-color:var(--group-color);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(20rem);
 }
 h3.hq{
     text-align: left;
 }
 h3.alw{
     text-align: right;
+}
+a{
+    text-decoration: none;
+    color: var(--second-color);
 }
 a.one{
     background-color: var(--first-color);
@@ -114,6 +125,7 @@ li.hw1{
     background-color: var(--group-color);
     box-shadow: 0rem 0.4rem 2rem var(--shade-color);
     color: var(--second-color);
+    backdrop-filter: blur(20rem);
     width: 14.049rem;
     height: 15.25rem;
 }
@@ -121,4 +133,36 @@ li.hw2{
     background-color: var(--group-color);
     width: 14.049rem;
     height: 15.25rem;
+    backdrop-filter: blur(2rem);
 }
+button.b2{
+    background-color: var(--first-color);
+    color: var(--second-color);
+    font-weight:400;
+    font-size: 2rem;
+    line-height: 150%;
+    text-decoration: none;
+    border-radius: 9rem;
+    padding: 0.5rem;
+    border: none;
+    width: 31.7rem;
+}
+form{
+    text-align: center;
+}
+.s1{
+    text-align: center;
+}
+footer{
+    background-color: var(--bacground2-color);
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 136%;
+    color: var(--second-color);
+}
+.last{
+    font-weight: 1.4rem;
+    line-height: 214%;
+    font-weight: 200;
+}
+
