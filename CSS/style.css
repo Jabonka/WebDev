@@ -1,5 +1,6 @@
 :root{
     font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
     font-size: 62.5%;
     --background-color:#678FF2;
     --first-color:#000000;
@@ -9,7 +10,6 @@
     --bacground2-color:rgba(255, 255, 255, 0.15);
 }
 .head{
-    font-weight: 400;
     font-size: 2.3rem;
     line-height: 130%;
 }
@@ -77,7 +77,6 @@ p.three2{
     text-align: right;
 }
 p.exp{
-    font-weight: 400;
     font-size: 2.5rem;
     line-height: 100%;
     color: var(--second-color);
@@ -167,7 +166,6 @@ form{
 }
 footer{
     background-color: var(--bacground2-color);
-    font-weight: 400;
     font-size: 2.2rem;
     line-height: 136%;
     color: var(--second-color);
