@@ -2,6 +2,7 @@
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 62.5%;
+    box-sizing: border-box;
     --background-color:#678FF2;
     --first-color:#000000;
     --second-color:#FFFFFF;
@@ -15,6 +16,15 @@
 }
 header{
     background-color: var(--group-color);
+    padding-left: 3rem;
+}
+.hed{
+    list-style: none;
+    text-align: right;
+    padding-right: 3rem;
+}
+.flex{
+    font-weight: 600;
 }
 .b4{
     background-color: var(--group-color);
@@ -30,13 +40,28 @@ h2{
     font-weight:700;
     font-size:4.5rem;
     line-height: 89%;
+    padding-top: 3em;
+    padding-left: 0.7em;
+    padding-bottom: 3em;
+    min-width: 322px;
 }
 p.cookie{
     font-weight: 500;
     font-size: 1rem;
     line-height: 140%;
-    vertical-align: top;
-    text-align: left;
+    text-align: center;
+}
+.pr{
+    background-color: var(--group-color);
+    border-radius: 2rem;
+    margin-top: 6.7rem;
+    margin-left: 3rem;
+    width: 34rem;
+    padding-left: 9rem;
+    padding-top: 1.6rem;
+    padding-bottom: 2rem;
+    padding-right: 0.6rem;
+    width: 31rem;
 }
 h3{
     font-weight:500;
@@ -61,6 +86,8 @@ ul.list{
     column-count: 2;
     column-width: auto;
     text-align: center;
+    list-style: none;
+    margin-left: 3rem;
 }
 p.three{
     font-weight:200;
@@ -68,6 +95,8 @@ p.three{
     line-height: 111%;
     color: var(--second-color);
     text-align: left;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 p.three2{
     font-weight:200;
@@ -75,11 +104,20 @@ p.three2{
     line-height: 111%;
     color: var(--second-color);
     text-align: right;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 p.exp{
     font-size: 2.5rem;
     line-height: 100%;
     color: var(--second-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+}
+.test{
+    margin-top: 17rem;
+    margin-bottom: 6rem;
 }
 li.otzv{
     font-weight: 200;
@@ -87,21 +125,44 @@ li.otzv{
     line-height: 129%;
     color: var(--second-color);
     text-align: center;
+    margin-bottom: 5rem;
 }
 h3.forms{
     color:var(--first-color);
     line-height: 114%;
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
 }
 li.listexp{
     text-align: center;
     background-color:var(--group-color);
     backdrop-filter: blur(20rem);
+    width: 31.9rem;
+    padding-top: 1.5rem;
+    margin-bottom: 5.4rem;
+    margin-left: 3rem;
+    list-style: none;
+    border-radius: 2rem;
 }
 h3.hq{
     text-align: left;
+    margin-top: 20rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 h3.alw{
     text-align: right;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-top: 12rem;
+}
+.In{
+    margin-top: 8.6rem;
+}
+.our{
+    margin-top: 11rem;
+    margin-bottom: 7rem;
 }
 a{
     text-decoration: none;
@@ -115,7 +176,13 @@ a.one{
     line-height: 150%;
     text-decoration: none;
     border-radius: 9rem;
-    padding: 0.5rem;
+    padding-left: 26px;
+    padding-top: 9px;
+    padding-right: 17px;
+    padding-bottom: 12px;
+    margin-left: 1.5em;
+    margin-bottom: 3rem;
+    min-width: 26rem;
 }
 button.b1{
     background-color: rgba(255, 255, 255, 0);
@@ -124,16 +191,23 @@ button.b1{
     font-size: 3rem;
     line-height: 47%;
     border: none;
+    text-align: center;
+    margin-top: 3rem;
 }
 button.b3{
     color: var(--second-color);
     background-color: var(--background-color);
     border: none;
 }
-.art{
-    text-align: center;
-    background-color: var(--group-color);
-    border-radius: 2rem;
+.otzButton{
+    display: block;
+    float: left;
+}
+.bird{
+    float: left;
+}
+.hw{
+    display: none;
 }
 li.hw1{
     background-color: var(--group-color);
@@ -142,12 +216,16 @@ li.hw1{
     backdrop-filter: blur(20rem);
     width: 14.049rem;
     height: 15.25rem;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
 }
 li.hw2{
     background-color: var(--group-color);
     width: 14.049rem;
     height: 15.25rem;
     backdrop-filter: blur(2rem);
+    border-radius: 2rem;
+    margin-bottom: 3rem;
 }
 button.b2{
     background-color: var(--first-color);
@@ -160,19 +238,33 @@ button.b2{
     padding: 0.5rem;
     border: none;
     width: 31.7rem;
+    margin-top: 2rem;
+    margin-bottom: 12rem;
 }
 form{
     text-align: center;
 }
+
 footer{
+    margin-top: 2.5rem;
+    padding-left: 3rem;
     background-color: var(--bacground2-color);
     font-size: 2.2rem;
     line-height: 136%;
     color: var(--second-color);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.term{
+    padding-right: 5rem;
 }
 .last{
-    font-weight: 1.4rem;
+    font-size: 1.4rem;
     line-height: 214%;
     font-weight: 200;
+}
+
+nav{
+    display: none;
 }
 
