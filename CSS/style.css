@@ -14,14 +14,16 @@
 .head{
     font-size: 2.3rem;
     line-height: 130%;
+    padding-right: 4rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    border-right: 0.2rem solid var(--second-color);
 
 }
 header{
     background-color: var(--group-color);
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
     border-bottom: 0.2rem solid var(--second-color);
     display: flex;
     justify-content: space-between;
@@ -33,10 +35,6 @@ header{
 }
 .flex{
     font-weight: 600;
-    padding-right: 4rem;
-    padding-top: 1.6rem;
-    padding-bottom: 1.6rem;
-    border-right: 0.2rem solid var(--second-color);
 }
 .b4{
     background-color: var(--group-color);
