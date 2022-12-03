@@ -10,6 +10,7 @@
     --shade-color:rgba(0, 0, 0, 0.1);
     --bacground2-color:rgba(255, 255, 255, 0.15);
 }
+
 .head{
     font-size: 2.3rem;
     line-height: 130%;
@@ -18,8 +19,12 @@
 header{
     background-color: var(--group-color);
     padding-left: 3rem;
+    padding-right: 3rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    border-bottom: 0.2rem solid var(--second-color);
+    display: flex;
+    justify-content: space-between;
 }
 .hed{
     list-style: none;
@@ -28,6 +33,10 @@ header{
 }
 .flex{
     font-weight: 600;
+    padding-right: 4rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    border-right: 0.2rem solid var(--second-color);
 }
 .b4{
     background-color: var(--group-color);
@@ -36,6 +45,38 @@ header{
 body{
     background-color: var(--background-color);
 }
+.section1{
+    margin-top: 14rem;
+    margin-bottom: 5rem;
+}
+.section2{
+    margin-top: 11rem;
+    border-bottom: 0.2rem solid var(--second-color);
+    margin-bottom: 11rem;
+}
+.section3{
+    margin-bottom: 17rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.section4{
+    margin-bottom: 15rem;
+}
+.section5{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.section6{
+    padding-bottom: 9rem;
+    border-bottom: 0.2rem solid var(--second-color);
+    display: flex;
+    justify-content: center;
+}
+.our_ex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 h1{
     font-size: 0;
 }
@@ -43,16 +84,17 @@ h2{
     font-weight:700;
     font-size:4.5rem;
     line-height: 89%;
-    padding-top: 3em;
     padding-left: 0.7em;
-    padding-bottom: 3em;
+    margin-bottom: 3em;
     min-width: 322px;
 }
 p.cookie{
     font-weight: 500;
     font-size: 1rem;
     line-height: 140%;
-    text-align: center;
+    text-align: left;
+    display: block;
+    padding-left: 12rem;
 }
 .pr{
     background-color: var(--group-color);
@@ -60,11 +102,11 @@ p.cookie{
     margin-top: 6.7rem;
     margin-left: 3rem;
     width: 34rem;
-    padding-left: 9rem;
     padding-top: 1.6rem;
     padding-bottom: 2rem;
     padding-right: 0.6rem;
-    width: 31rem;
+    min-width: 30rem;
+    position: relative;
 }
 h3{
     font-weight:500;
@@ -85,13 +127,14 @@ p.plist{
 }
 
 ul.list{
-    -webkit-column-count: 2;
-    column-count: 2;
-    column-width: auto;
     text-align: center;
     list-style: none;
-    margin-left: 3rem;
-    margin-top: 5rem;
+    padding-left: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;;
+    justify-content: space-evenly;
+    max-width: 70rem;
 }
 p.three{
     font-weight:200;
@@ -120,7 +163,6 @@ p.exp{
     padding-bottom: 1.5rem;
 }
 .test{
-    margin-top: 17rem;
     margin-bottom: 6rem;
 }
 li.otzv{
@@ -137,9 +179,22 @@ li.otzv{
 h3.forms{
     color:var(--first-color);
     line-height: 114%;
-    margin-top: 15rem;
     margin-bottom: 2rem;
-    margin-left: 3rem;
+    text-align: center;
+}
+
+input{
+    display:flex ;
+    justify-content: space-around;
+    min-width: 32rem;
+    max-width: 62rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9rem;
+    padding-left: 2rem;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 li.listexp{
     text-align: center;
@@ -148,27 +203,27 @@ li.listexp{
     width: 31.9rem;
     padding-top: 1.5rem;
     margin-bottom: 5.4rem;
-    margin-left: 3rem;
     list-style: none;
     border-radius: 2rem;
 }
 h3.hq{
     text-align: left;
-    margin-top: 20rem;
     margin-left: 3rem;
     margin-right: 3rem;
+    margin-bottom: 1rem;
 }
 h3.alw{
     text-align: right;
     margin-right: 3rem;
     margin-left: 3rem;
     margin-top: 12rem;
+    margin-bottom: 1rem;
 }
 .In{
     margin-top: 8.6rem;
+    margin-bottom: 1rem;
 }
 .our{
-    margin-top: 11rem;
     margin-bottom: 7rem;
 }
 a{
@@ -188,8 +243,11 @@ a.one{
     padding-right: 17px;
     padding-bottom: 12px;
     margin-left: 1.5em;
-    margin-bottom: 3rem;
-    max-width: 26rem;
+    margin-right: 4em;
+    min-width: 29rem;
+    display: block;
+    max-width: 39rem;
+    text-align: center;
 }
 button.b1{
     background-color: rgba(255, 255, 255, 0);
@@ -199,7 +257,12 @@ button.b1{
     line-height: 47%;
     border: none;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 0.2rem solid var(--second-color);
+    padding-left: 11rem;
+    padding-right: 10.5rem;
+
 }
 button.b3{
     color: var(--second-color);
@@ -207,11 +270,17 @@ button.b3{
     border: none;
 }
 .otzButton{
-    display: block;
-    float: left;
+    flex-flow: row;
+    list-style: none;
+    justify-content: space-around;
+}
+.buttonotzv{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 .bird{
-    float: left;
+    position: absolute;
 }
 .hw{
     display: none;
@@ -222,17 +291,21 @@ li.hw1{
     color: var(--second-color);
     backdrop-filter: blur(20rem);
     width: 14.049rem;
-    height: 15.25rem;
+    height: auto;
     border-radius: 2rem;
     margin-bottom: 3rem;
+    padding: 1em;
+    margin-right: 3rem;
 }
 li.hw2{
     background-color: var(--group-color);
     width: 14.049rem;
-    height: 15.25rem;
+    height: auto;
     backdrop-filter: blur(2rem);
     border-radius: 2rem;
     margin-bottom: 3rem;
+    padding: 1em;
+    margin-right: 3rem;
 }
 button.b2{
     background-color: var(--first-color);
@@ -244,7 +317,11 @@ button.b2{
     border-radius: 9rem;
     padding: 0.5rem;
     border: none;
-    width: 31.7rem;
+    min-width: 32rem;
+    max-width: 62rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     margin-top: 2rem;
     margin-bottom: 12rem;
 }
@@ -270,7 +347,16 @@ footer{
     line-height: 214%;
     font-weight: 200;
 }
-
+.pic{
+    display: flex;
+    justify-content: end;
+}
+.help{
+    margin-left: 4rem;
+}
+.flower{
+    display: block;
+}
 nav{
     display: none;
 }
