@@ -27,11 +27,32 @@ header{
     border-bottom: 0.2rem solid var(--second-color);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .hed{
+    font-size: 2rem;
+    font-weight: 200;
     list-style: none;
     text-align: right;
     padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    flex-grow: 1;
+
+}
+.left{
+    display: flex;
+}
+.rigth{
+    display: flex;
+}
+.l{
+    margin-left: 10.8rem;
+}
+.r{
+    margin-right: 6rem;
 }
 .flex{
     font-weight: 600;
@@ -39,9 +60,13 @@ header{
 .b4{
     background-color: var(--group-color);
     border: none;
+    padding: 0;
 }
 body{
     background-color: var(--background-color);
+}
+.img{
+    display: block;
 }
 .section1{
     padding-top: 14rem;
@@ -50,6 +75,8 @@ body{
 .section2{
     padding-top: 11rem;
     border-bottom: 0.2rem solid var(--second-color);
+    display: flex;
+    flex-direction: column;
 }
 .section3{
     margin-left: 3rem;
@@ -70,6 +97,8 @@ body{
     border-bottom: 0.2rem solid var(--second-color);
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .our_ex{
     display: flex;
@@ -83,22 +112,20 @@ body{
 }
 .cc{
     position: relative;
-    display: flex;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    max-width: 68rem;
 }
 h1{
     font-size: 0;
 }
 h2{
     font-weight:700;
-    font-size:4.5rem;
+    font-size:13vw;
     line-height: 89%;
     padding-left: 0.7em;
     margin-bottom: 3em;
     min-width: 366px;
-    max-width: 400px;
     display: flex;
     justify-items: center;
     margin-left: auto;
@@ -110,7 +137,7 @@ p.cookie{
     line-height: 140%;
     text-align: left;
     display: block;
-    padding-left: 12rem;
+    padding-left: 9rem;
 }
 .pr{
     background-color: var(--group-color);
@@ -124,7 +151,9 @@ p.cookie{
     padding-bottom: 2rem;
     padding-right: 0.6rem;
     position: relative;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h3{
     font-weight:500;
@@ -173,6 +202,18 @@ p.three2{
     margin-left: 3rem;
     margin-right: 3rem;
 }
+.laptop{
+    padding-left: 50%;
+
+}
+.th1{
+    display: flex;
+    flex-direction: column;
+}
+.th2{
+    display: flex;
+    flex-direction: column;
+}
 p.exp{
     font-size: 2.5rem;
     line-height: 100%;
@@ -193,7 +234,9 @@ li.otzv{
     margin-bottom: 5rem;
     margin-left: 5rem;
     list-style: none;
-    margin-right: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 40rem;
 }
 h3.forms{
     color:var(--first-color);
@@ -268,6 +311,25 @@ a.one{
     max-width: 39rem;
     text-align: center;
 }
+/* {
+    background-color: var(--first-color);
+    color: var(--second-color);
+    font-weight:400;
+    font-size: 2rem;
+    line-height: 150%;
+    text-decoration: none;
+    border-radius: 9rem;
+    padding-left: 26px;
+    padding-top: 9px;
+    padding-right: 17px;
+    padding-bottom: 12px;
+    margin-left: 1.5em;
+    margin-right: 4em;
+    min-width: 29rem;
+    display: block;
+    max-width: 39rem;
+    text-align: center;
+} */
 button.b1{
     background-color: rgba(255, 255, 255, 0);
     color: var(--first-color);
@@ -278,15 +340,27 @@ button.b1{
     text-align: center;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
-    border-top: 0.2rem solid var(--second-color);
-    padding-left: 11rem;
-    padding-right: 10.5rem;
-
+    margin-left: auto;
+    margin-right: auto;
 }
-button.b3{
+.b3{
     color: var(--second-color);
-    background-color: var(--background-color);
-    border: none;
+}
+.scroll{
+    rotate: 90deg;
+    transform-origin: bottom left;
+    position: absolute;
+    /* top: 625px; */
+/*   transform: translateX(100%);  */
+    display: flex;
+    gap: 1em;
+}
+hr{
+    flex-grow: 1;
+    align-self: center;
+    width: 7rem;
+    background-color: white;
+    border: 1px solid white;
 }
 .otzButton{
     flex-flow: row;
@@ -300,10 +374,12 @@ button.b3{
 }
 .bird{
     position: absolute;
-    margin-left: -17rem;
+    left: 0;
+    top:-7rem;
 }
 .hw{
     display: none;
+    margin-bottom: 8rem;
 }
 li.hw1{
     background-color: var(--group-color);
@@ -379,8 +455,16 @@ footer{
 }
 nav{
     display: none;
-}
+} 
 
+@media (min-width:900px){
+    .b4{
+        display: none;
+    }
+    nav{
+        display: initial;
+    }
+}
 
 @media (min-width:1100px){
     h2{
@@ -405,9 +489,29 @@ nav{
         margin-bottom: 4rem;
     }
     .one{
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+        margin-top: 40px;
         font-size: 3rem;
-        margin-left: 0;
-        margin-right: 0;
+    }
+    .hw{
+        display: flex;
+    }
+    .pr{
+        flex-direction: row;
+        align-items: center;
+    }
+    button.b1{
+        margin: 0;
+        padding: 0;
+    }
+    .th1{
+        flex-direction: row;
+        overflow: hidden;
+    }
+    .th2{
+        flex-direction: row-reverse;
+    }
+    .laptop{
+        padding-left: 0;
     }
 }
