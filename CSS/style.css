@@ -64,6 +64,7 @@ header{
 }
 body{
     background-color: var(--background-color);
+    overflow-x: hidden;
 }
 .img{
     display: block;
@@ -121,7 +122,7 @@ h1{
 }
 h2{
     font-weight:700;
-    font-size:13vw;
+    font-size:12.5vw;
     line-height: 89%;
     padding-left: 0.7em;
     margin-bottom: 3em;
@@ -191,7 +192,8 @@ p.three{
     color: var(--second-color);
     text-align: left;
     margin-left: 3rem;
-    margin-right: 3rem;
+    margin-right:3rem;
+    max-width: 56rem;
 }
 p.three2{
     font-weight:200;
@@ -203,7 +205,8 @@ p.three2{
     margin-right: 3rem;
 }
 .laptop{
-    padding-left: 50%;
+    float: right;
+    margin-right: -50%;
 
 }
 .th1{
