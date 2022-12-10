@@ -212,6 +212,7 @@ p.three2{
 .th1{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 .th2{
     display: flex;
@@ -450,6 +451,7 @@ footer{
 }
 .flower{
     display: block;
+    float: right;
 }
 .textB{
     display: flex;
