@@ -9,6 +9,7 @@
     --group-color:rgba(255, 255, 255, 0.1);
     --shade-color:rgba(0, 0, 0, 0.1);
     --bacground2-color:rgba(255, 255, 255, 0.15);
+    --gradient-color1:#5081ed;
 }
 
 .head{
@@ -73,6 +74,15 @@ body{
 .section1{
     padding-top: 14rem;
     padding-bottom: 5rem;
+    background-image: url(/img/cloud7.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:0 7rem;
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin:border-box;
+    background-position: 0% -100px; */
+    
 }
 .section2{
     padding-top: 11rem;
@@ -93,6 +103,12 @@ body{
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 2.5rem;
+}
+.clouds{
+    background-image: url(/img/cloud3.png),url(/img/cloud5.png);
+    background-repeat: no-repeat;
+    background-size:initial;
+    background-position: 0 0,right bottom 3rem;
 }
 .section6{
     padding-bottom: 9rem;
@@ -214,14 +230,17 @@ p.three2{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    background: linear-gradient(0deg, var(--gradient-color1) 0%, var(--background-color) 100%);
 }
 .th2{
     display: flex;
     flex-direction: column;
+    background: var(--gradient-color1);
 }
 .th3{
     display: flex;
     flex-direction: column;
+    background: linear-gradient(180deg, var(--gradient-color1) 0%, var(--background-color) 100%);
 }
 p.exp{
     font-size: 2.5rem;
@@ -236,16 +255,35 @@ p.exp{
 }
 li.otzv{
     font-weight: 200;
-    font-size: 1.4;
+    font-size: 1.4rem;
+    text-align: left;
     line-height: 129%;
     color: var(--second-color);
-    text-align: center;
-    margin-bottom: 5rem;
-    margin-left: 5rem;
     list-style: none;
-    margin-right: auto;
+    max-width: 30rem;
+    margin-left: 3rem;
+    margin-right: 4rem;
+
+}
+.ramka{
+    background: url(/img/Rectangle.svg) 100% 100%;
+    background-repeat: no-repeat;
+    background-size:contain;
+    /* max-height: 275px;
+    max-width: 500px;*/
+    min-width: 375px;
+    max-width: 570px;
+    min-height: 240px;
+    max-height: auto;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
-    max-width: 40rem;
+    margin-right: auto;
+}
+.hul{
+    margin: 0;
 }
 h3.forms{
     color:var(--first-color);
@@ -385,6 +423,13 @@ hr{
     border: 0;
     background-color: var(--background-color);
 }
+.baton2{
+    display: flex;
+    border: 0;
+    border-radius: 50%;
+    height: 12px;
+    background-color: #B4B4B4;
+}
 .baton{
     display: flex;
     border: 0;
@@ -487,19 +532,38 @@ footer{
     margin-left: auto;
     height: 50rem;
 }
+.shadow{
+    filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.3));
+}
 .textB{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .phone{
-    margin-top: -10rem;
-    rotate: 40deg;
+    margin-top: -8rem;
+    rotate: 30deg;
     margin-left: -6.1rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    overflow-x: hidden;
+}
+.strelka{
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+}
+.img2{
+    border-radius: 0 0 0 20px;
 }
 nav{
     display: none;
-} 
+}
+
+@media(min-width:400px){
+    .phone{
+        margin-left: -10rem;
+    }
+}
 
 @media (min-width:900px){
     .b4{
@@ -507,6 +571,14 @@ nav{
     }
     nav{
         display: initial;
+    }
+    .section1{
+        background-image: url(/img/cloud7.png);
+        background-position: center 0;
+    }
+    .clouds{
+        background-image: url(/img/cloud4.png), url(/img/cloud6.png);
+        background-position: -10px 0,right bottom;
     }
 }
 
@@ -562,6 +634,7 @@ nav{
     }
     .phone{
         rotate: 0deg;
+        margin-left: 0;
     }
     .pic{
         margin-bottom: -8rem;
@@ -577,5 +650,12 @@ nav{
     }
     .hq{
         margin-top: 3rem;
+    }
+    .flower{
+        height: auto;
+    }
+    .section1{
+        background-position: center -20rem;
+        background-size: 1440px auto;
     }
 }
