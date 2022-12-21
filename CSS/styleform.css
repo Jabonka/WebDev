@@ -134,6 +134,10 @@ button:active{
     border-color: #333;
     color: #eee;
 }
+button:disabled {
+    transform: initial;
+    background-color: initial;
+}
 input.none:focus{
     box-shadow: none;
 }

@@ -36,13 +36,13 @@
             <form name="contact" method="POST" data-netlify="true">
                 <fieldset>
                     <legend>Личная информация</legend>
-                    <p><label>Имя<input class="block" type="text" placeholder="Имя" required></label>
+                    <p><label>Имя<input class="block" type="text" name="Name" placeholder="Имя" required></label>
                     </p>
                     <p><label>Дата рождения<input class="block" type="date"></label></p>
                     <p>Пол
                         <div class="in">
-                            <label><input class="none" type="radio" name="radio" value="1">Женский</label>
-                            <label><input class="none" type="radio" name="radio" value="2">Мужской</label>
+                            <label><input class="none" type="radio" name="gender" value="1">Женский</label>
+                            <label><input class="none" type="radio" name="gender" value="2">Мужской</label>
                         </div>
                     </p>
                     <p><label>Пароль<input class="block" type="password" name="password" id="password" value="password" required></label></p>
@@ -53,10 +53,10 @@
                     <p><label>Телефон<input class="block" type="tel" name="tel" placeholder="+79004564793"></label></p>
                     <p>Удобный интервал для связи
                         <div class="in">
-                            <label><input class="none" type="checkbox" name="checkbox" value="1">Утро</label>
-                            <label><input class="none" type="checkbox" name="checkbox" value="2">День</label>
-                            <label><input class="none" type="checkbox" name="checkbox" value="3">Вечер</label>
-                            <label><input class="none" type="checkbox" name="checkbox" value="4">Ночь</label>
+                            <label><input class="none" type="checkbox" name="time" value="1">Утро</label>
+                            <label><input class="none" type="checkbox" name="time" value="2">День</label>
+                            <label><input class="none" type="checkbox" name="time" value="3">Вечер</label>
+                            <label><input class="none" type="checkbox" name="time" value="4">Ночь</label>
                         </div>
                     </p>
                 </fieldset>
