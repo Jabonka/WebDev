@@ -1,0 +1,241 @@
+:root{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    --background-color:#678FF2;
+    --first-color:#000000;
+    --second-color:#FFFFFF;
+    --group-color:rgba(255, 255, 255, 0.1);
+    --shade-color:rgba(0, 0, 0, 0.1);
+    --bacground2-color:rgba(255, 255, 255, 0.15);
+    --gradient-color1:#5081ed;
+}
+::selection{
+    color: var(--gradient-color1);
+    background-color: var(--second-color);
+}
+::placeholder{
+    font-size: 1.5rem;
+    font-style: oblique;
+}
+header{
+    background-color: var(--group-color);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-bottom: 0.2rem solid var(--second-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hed{
+    font-size: 2rem;
+    font-weight: 200;
+    list-style: none;
+    text-align: right;
+    padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.head{
+    font-size: 2.3rem;
+    line-height: 130%;
+    padding-right: 4rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    border-right: 0.2rem solid var(--second-color);
+}
+body{
+    background-color: var(--background-color);
+}
+p{
+    font-size: 2rem;
+    line-height: 100%;
+    color: var(--first-colorr);
+    /* padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem; */
+}
+.list{
+    flex-grow: 1;
+
+}
+.left{
+    display: flex;
+}
+.rigth{
+    display: flex;
+}
+.l{
+    margin-left: 10.8rem;
+}
+.r{
+    margin-right: 6rem;
+}
+.flex{
+    font-weight: 600;
+}
+label{
+    font-size: 1.7rem;
+}
+h2{
+    font-weight:700;
+    font-size:12.5vw;
+    line-height: 89%;
+    padding-left: 0.7em;
+    margin-bottom: 3em;
+    min-width: 366px;
+    display: flex;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h3{
+    font-weight:500;
+    font-size:3.5rem;
+    line-height: 140%;
+    color: var(--second-color);
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: var(--second-color);
+}
+.b4{
+    background-color: var(--group-color);
+    border: none;
+    padding: 0;
+}
+.one{
+    display: flex;
+}
+.block{
+    display: block;
+}
+nav{
+    display: none;
+}
+button{
+    background-color: var(--group-color);
+    border-radius: 10px;
+}
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--second-color);
+}
+button:hover {
+    background-color: var(--second-color);
+    transform: scale(1.2);
+    transition: transform 1s, background-color 0.5s;
+    cursor: pointer;
+}
+button:active{
+    background-color: #333;
+    border-color: #333;
+    color: #eee;
+}
+input.none:focus{
+    box-shadow: none;
+}
+input:focus{
+    box-shadow: 0 0 0 3px var(--second-color);
+}
+.bu{
+    font-size: 1.5rem;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    max-width: 62rem;
+    min-width: 32rem;
+}
+input{
+    display:flex ;
+    justify-content: space-around;
+    min-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9rem;
+    padding-left: 2rem;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.in{
+    display: flex;
+}
+.none{
+    min-width: 10rem;
+}
+fieldset{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border-color: var(--second-color);
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.buttons{
+    display: flex;
+    max-width: 62rem;
+    min-width: 40rem;
+    justify-content: space-around;
+}
+legend{
+    font-size: 2.5rem;
+    line-height: 100%;
+    color: var(--first-colorr);
+}
+section{
+    display: flex;
+    /* margin-left: 3rem;
+    margin-right: 3rem; */
+    vertical-align: middle;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+footer{
+    padding-left: 3rem;
+    background-color: var(--bacground2-color);
+    font-size: 2.2rem;
+    line-height: 136%;
+    color: var(--second-color);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.term{
+    margin-right: 5rem;
+}
+.last{
+    font-size: 1.4rem;
+    line-height: 214%;
+    font-weight: 200;
+}
+html, body {
+    height: 100%;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+@media (min-width:900px){
+    nav{
+        display: initial;
+    }
+    .b4{
+        display: none;
+    }
+}
