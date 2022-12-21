@@ -137,6 +137,8 @@ button:active{
 button:disabled {
     transform: initial;
     background-color: initial;
+    color: initial;
+    background-color: var(--shade-color);
 }
 input.none:focus{
     box-shadow: none;
